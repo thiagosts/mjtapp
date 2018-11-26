@@ -1,0 +1,41 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.com.connekt.matching",
+      "nativeLanguage": "en"
+    },
+    "jhipsterVersion": "5.7.0",
+    "applicationType": "microservice",
+    "baseName": "matchingJob",
+    "packageName": "br.com.connekt.matching",
+    "packageFolder": "br/com/connekt/matching",
+    "serverPort": "8081",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": true,
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "h2Disk",
+    "prodDatabaseType": "mysql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "YTg2NWQxZWEzYjE3ZDY1YjIyZjg0MjQ1ZTk1ZmVmYThiMGExNjBmMDEzZjNjZmQ3NGE2MGJjYjM3ODNkZTFkYjI0ZjI5ZDgxN2U1MGI4NTZiZjFlZDY5Mjk1MzdiZjI5Y2Y3MjE0OTE5ZWMxNmQxZTQ1ZDVhNmZjNjZjZjJlMjU=",
+    "testFrameworks": [
+      "gatling"
+    ],
+    "jhiPrefix": "jhi",
+    "otherModules": [],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "en",
+    "languages": [
+      "en",
+      "pt-br"
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
