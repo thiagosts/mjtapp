@@ -1,0 +1,28 @@
+{
+    "name": "Customization",
+    "fields": [
+        {
+            "fieldName": "customCSS",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "urlLogo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "matchingId",
+            "fieldType": "Long"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181126200626",
+    "entityTableName": "customization",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "matchingJob",
+    "applications": "*",
+    "microserviceName": "matchingJob"
+}

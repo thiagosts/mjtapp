@@ -1,0 +1,35 @@
+{
+    "name": "Answers",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "maxSize",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "relationshipName": "questions",
+            "otherEntityName": "questions",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20181126200625",
+    "entityTableName": "answers",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "matchingJob",
+    "applications": "*",
+    "microserviceName": "matchingJob"
+}

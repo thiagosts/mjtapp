@@ -1,0 +1,61 @@
+{
+    "name": "Matchings",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "lastModifiedDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "time",
+            "fieldType": "BigDecimal"
+        },
+        {
+            "fieldName": "isDefault",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "matchingsJob",
+            "otherEntityName": "matchingsJob",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "relationshipName": "customization",
+            "otherEntityName": "customization",
+            "otherEntityField": "id",
+            "ownerSide": true,
+            "otherEntityRelationshipName": "matchings"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "questions",
+            "otherEntityName": "questions",
+            "otherEntityRelationshipName": "matchings"
+        }
+    ],
+    "changelogDate": "20181126200623",
+    "entityTableName": "matchings",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "matchingJob",
+    "applications": "*",
+    "microserviceName": "matchingJob"
+}

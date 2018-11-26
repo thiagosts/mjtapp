@@ -1,0 +1,39 @@
+{
+    "name": "MatchingsJob",
+    "fields": [
+        {
+            "fieldName": "cutNote",
+            "fieldType": "Float"
+        },
+        {
+            "fieldName": "order",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "require",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "opportunitiesId",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "matchings",
+            "otherEntityName": "matchings",
+            "otherEntityRelationshipName": "matchingsJob"
+        }
+    ],
+    "changelogDate": "20181126200622",
+    "entityTableName": "matchings_job",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "matchingJob",
+    "applications": "*",
+    "microserviceName": "matchingJob"
+}

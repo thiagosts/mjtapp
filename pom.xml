@@ -152,6 +152,11 @@
             <artifactId>metrics-servlet</artifactId>
         </dependency>
         <dependency>
+           <groupId>io.springfox</groupId>
+           <artifactId>springfox-swagger-ui</artifactId>
+           <version>2.9.2</version>
+       </dependency>
+        <dependency>
             <groupId>io.dropwizard.metrics</groupId>
             <artifactId>metrics-servlets</artifactId>
         </dependency>

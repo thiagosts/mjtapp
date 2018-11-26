@@ -1,0 +1,56 @@
+entity MatchingsJob {
+	cutNote Float,
+    order Integer,
+    require String,
+    opportunitiesId String
+}
+entity Matchings {
+	name String,
+    type String,
+	createdDate Instant,
+	lastModifiedDate Instant,
+	time BigDecimal,
+	isDefault String
+	
+}
+entity Questions {
+	name String,
+    description String,
+    type String,
+    order Integer,
+    require String
+}
+entity Answers {
+	name String,
+    value Integer,
+    maxSize Integer    
+}
+entity Customization {
+	customCSS String,
+    urlLogo String,
+    matchingId Long
+}
+
+relationship OneToOne {
+	Matchings{customization} to Customization
+}
+relationship OneToMany {
+	MatchingsJob{matchings} to Matchings
+}
+relationship OneToMany {
+	Matchings{questions} to Questions{matchings}
+}
+relationship OneToMany {
+	Questions{answers} to Answers{questions}
+}
+
+dto MatchingsJob, Matchings, Customization, Answers, Questions with mapstruct
+
+paginate MatchingsJob, Matchings, Customization, Questions, Answers with pagination
+
+//microservice Matchings with Results
+
+//microservice Answers with ResultsDetails
+
+service all with serviceImpl
+
